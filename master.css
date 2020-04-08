@@ -1,0 +1,199 @@
+/*---------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------------------------------------*/
+/*-------Headings---------*/
+h1, h2, h3{
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 1px;    /*space out letters*/
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 400%;
+  word-spacing: 4px;      /*Space out words*/
+}
+
+h2{
+  font-size: 200%;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: green;
+  content: " ";
+  width:100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h3{
+  font-size: 110%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/*-- Subheading fromatting */
+.subhead{
+  text-align: center;
+}
+
+
+/* ---------listbox */
+.listbox{
+  border: solid;
+  border-radius: 6px;
+  border-style: hidden;
+  height: 250px;
+  margin-bottom: 40px;
+  color: white;
+  padding: 5px 15px;
+}
+
+.listbox h3 {
+  font-weight: 400;
+}
+#listbox1{
+    background-color: #33FFBA;    //light green
+}
+#listbox2{
+    background-color: #FFC300;    //Mustard
+}
+#listbox3{
+    background-color: #FF3373;    //Pink
+}
+#listbox4{
+    background-color: #33DEFF;    //Light blue
+}
+
+/* ---------paragraphs */
+.long-copy{
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+/*------Box-----*/
+.box{
+  padding: 2%;
+  text-align: center;
+}
+
+.box p{
+  font-size: 90%;
+  line-height: 145%;
+  text-align: justify;
+}
+/*------SVG Icon-----*/
+section{
+  padding: 60px 0;
+}
+
+.icon {
+  color: green;
+}
+
+/*---------------------------------------------------*/
+/*HEADER*/
+/*---------------------------------------------------*/
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+                                    rgba(0, 0, 0, 0.7)),
+                                    url(img/hall.jpeg);
+  background-size: cover;   /*make the picture fit the viewport*/
+  background-position: center; /*center the img on viewport(resizing)*/
+  height: 100vh;            /*100% of the viewport*/
+  font-family: 'Lato','Arial', sans-serif;
+}
+
+
+/* Override bootstrap properties with #bootstap-overrides*/
+/*---------------------------------------------------*/
+/*NAVIGATION BAR*/
+/*---------------------------------------------------*/
+#bootstrap-overrides nav{
+  background-color: rgb(255, 255, 255, 0.2);      /*Color*/
+  line-height: 1;                                 /*Height*/
+  font-weight: 300;
+}
+
+#bootstrap-overrides .navbar-brand{
+  color: white;                                   /*Color-brand*/
+}
+
+#bootstrap-overrides .nav-link{
+  margin-left:25px;                          /*To space out the Nav elements*/
+  margin-right: 25px;
+  border-bottom: 3px solid transparent;
+  color: white;
+}
+
+#bootstrap-overrides .nav-link:hover,
+#bootstrap-overrides .nav-link:active{
+  color: rgb(173, 173, 173);                 /*Color change to grey on hover*/
+  border-bottom: 3px solid;
+  border-color: green;
+  transition: color 0.4s, border-bottom 0.4s, border-color 0.4s;
+  transition: scaleX(0.1);
+}
+
+
+/*---------------------------------------------------*/
+/*BANNER*/
+/*---------------------------------------------------*/
+.banner{
+  position: absolute;
+  width: 1140px;
+  top: 20%;
+  left: 15%;
+  /*transform: translate(-50%,-50%);*/
+}
+
+.image-school{
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  top: 40%;
+  left: 10%;
+  border-radius: 100px;
+}
+
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  font-size: 150%;
+  font-weight: 0;
+  color: white;
+  text-transform: capitalize;
+  line-height: 200%;
+  position: absolute;
+  letter-spacing: 1px;
+  top: 35%;
+  left: 35%;
+}
+blockquote::before{
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  color: green;
+  top: -5px;
+  left: -5px;
+}
+
+.footer-qoute{
+  color: white;
+  text-transform: capitalize;
+  font-size: 200%;
+  font-weight: 300;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  letter-spacing: 4px;
+}
